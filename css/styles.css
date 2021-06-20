@@ -55,9 +55,15 @@ footer {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
 }
-.tile img:hover {
+.col:hover {
+  transform: scale(1.05);
+  filter: grayscale(60%);
+
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+}
+.card:hover{
+  filter: grayscale(60%);
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -69,17 +75,22 @@ footer {
   letter-spacing: 2px;
 }
 
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
-
+    url("/me_qtripstatic_module_layout_stub/assets/hero.jpg");
+    
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-subheading {
+  color: azure;
   font-size: 24px;
   font-weight: 100;
 }
@@ -121,7 +132,14 @@ footer {
   /* 1. Fill in the required properties. */
 
 }
+.on-img{
+  /* position: absolute; */
+  /* text-align: center; */
+  /* bottom: 0px ; */
+  padding-top: 110%;
+  text-align: center;
 
+}
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
@@ -141,4 +159,8 @@ footer {
     width: 400px;
     position: fixed;
   }
+}
+
+.abc:hover{
+  filter: grayscale(70%);
 }

@@ -1,48 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip Adventures</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QTrip Adventures</title>
-  <link rel="stylesheet" href="../../css/styles.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" style="padding-left: 2%;" href="../../index.html">QTRip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" dir="rtl">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+        </ul>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">QTrip</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav d-flex justify-content-end w-100">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/adventures/">Explore</a>
-        </li>
-
-      </ul>
+    <div style="margin-left: 7%; margin-top: 7%;">
+      <h3>Explore all adventures</h3>
+      <p>Here's a list of adventures that you can explore in city</p>
     </div>
-  </nav>
 
-  <div class="container">
-    <div class="content">
-      <!-- TODO: MODULE_ADVENTURES_GRID -->
-      <!-- 1. Create the grid of adventures by adding child elements as required. -->
+    <div class="container">
+      <div class="content">
+        <!-- TODO: MODULE_ADVENTURES_GRID -->
+        <!-- 1. Create the grid of adventures by adding child elements as required. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3">
+          <div class="card img-fluid h-100" style="width: 18rem">
+            <a href="resort/index.html"> <img
+              src="../../assets/adventures/huts.jpg"
+              class="card-img-top"
+              height="110%"
+              alt="..."
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Resort</h5>
+              <p class="card-text">INR 2500</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../../assets/adventures/palace.jpg"
+              class="card-img-top"
+              height="81%"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Palace</h5>
+              <p class="card-text">INR 5000</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/market.jpg"
+              class="card-img-top"
+              
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Market</h5>
+              <p class="card-text">INR 2000</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/mount.jpg"
+              class="card-img-top"
+              
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mount</h5>
+              <p class="card-text">INR 2000</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/resort.jpg"
+              class="card-img-top"
+              height="82%"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Huts</h5>
+              <p class="card-text">INR 1500</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/tower.jpg"
+              class="card-img-top"
+              
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tower</h5>
+              <p class="card-text">INR 500</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/university.jpg"
+              class="card-img-top"
+              
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">University</h5>
+              <p class="card-text">INR 25000</p>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem">
+            <img
+              src="../../assets/adventures/church.jpg"
+              class="card-img-top"
+              
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Church</h5>
+              <p class="card-text">INR 1000</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">© QTrip 2020</div>
-  </footer>
-  <!-- TODO: MODULE_ADVENTURES_GRID -->
-  <!-- 1. <script> elements need to be added. -->
-</body>
-
+    <footer>
+      <div class="container">© QTrip 2020</div>
+    </footer>
+    <!-- TODO: MODULE_ADVENTURES_GRID -->
+    <!-- 1. <script> elements need to be added. -->
+  </body>
 </html>
